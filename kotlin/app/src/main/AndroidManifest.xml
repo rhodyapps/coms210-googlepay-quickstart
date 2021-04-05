@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <!-- This element is required in order to use the PaymentsClient -->
+        <!-- This element is required in order to use the PaymentsClient
+        Comsc210-Note: this next statement is from step 4 in the tutorial -->
+
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />

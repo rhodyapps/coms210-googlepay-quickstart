@@ -129,6 +129,7 @@ object PaymentsUtil {
      * @see [PaymentMethod](https://developers.google.com/pay/api/android/reference/object.PaymentMethod)
      */
     // Optionally, you can add billing address/phone number associated with a CARD payment method.
+    // Comsc210-note: This next function is documented in step 6 of the tutorial
     private fun baseCardPaymentMethod(): JSONObject {
         return JSONObject().apply {
 
@@ -153,6 +154,7 @@ object PaymentsUtil {
      * @throws JSONException
      * @see [PaymentMethod](https://developers.google.com/pay/api/android/reference/object.PaymentMethod)
      */
+    /* Comsc210-Note: this utility function is documented in step 6 of the tutorial */
     private fun cardPaymentMethod(): JSONObject {
         val cardPaymentMethod = baseCardPaymentMethod()
         cardPaymentMethod.put("tokenizationSpecification", gatewayTokenizationSpecification())
@@ -196,6 +198,8 @@ object PaymentsUtil {
      * environment and theme set in [Constants].
      *
      * @param activity is the caller's activity.
+     *
+     * This next function is from the code provided in step 6 of the tutorial
      */
     fun createPaymentsClient(activity: Activity): PaymentsClient {
         val walletOptions = Wallet.WalletOptions.Builder()

@@ -72,13 +72,19 @@
             android:textColor="#777777"
             android:text="A versatile full-zip that you can wear all day long and even..."/>
 
+        <!-- Comsc210-Note: This is teh markup code to create the google pay button
+        as documented in step 5 of the tutorial. Notice I removed the last line
+         android:visibility="gone"/> so that the button would always be visible
+         on my emulator which does not support the google pay api-->
+
         <include
             android:id="@+id/googlePayButton"
             layout="@layout/buy_with_googlepay_button"
             android:layout_width="match_parent"
             android:layout_height="@dimen/buy_button_height"
-            android:layout_marginBottom="20dp"
-            android:visibility="gone"/>
+            android:layout_marginBottom="20dp"/>
+
+
 
     </LinearLayout>
 

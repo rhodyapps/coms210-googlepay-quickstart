@@ -27,4 +27,7 @@ android {
 dependencies {
     implementation "com.google.android.gms:play-services-wallet:16.0.1"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    /* Comsc210-note:  Step 4 of the tutorial: add the following dependency for Google Pay API
+    * to enable google play services */
+    implementation "com.google.android.gms:play-services-wallet:18.0.0"
 }

@@ -44,7 +44,11 @@ class CheckoutActivity : Activity() {
      *
      * @see [PaymentsClient](https://developers.google.com/android/reference/com/google/android/gms/wallet/PaymentsClient)
      */
+
+    /* Comsc210-note: This next line is from step 6 - Initialize and configure Google Pay */
     private lateinit var paymentsClient: PaymentsClient
+
+
     private val shippingCost = (90 * 1000000).toLong()
 
     private lateinit var garmentList: JSONArray
@@ -61,7 +65,10 @@ class CheckoutActivity : Activity() {
      * Initialize the Google Pay API on creation of the activity
      *
      * @see Activity.onCreate
-     */
+
+    * Comsc210-note: This next bit of code is also from step 6, it is overriding the onCreate() function
+     * so that it can be used with the checkout activity layout for this app */
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
