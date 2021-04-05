@@ -1,5 +1,7 @@
 # Google Pay API sample app for Android
 
+Based on the codelab available at:
+https://developer.android.com/codelabs/pay-android-checkout?hl=en&continue=https%3A%2F%2Fcodelabs.developers.google.com%2F%3Fcat%3Dandroid#1
 ## Overview
 This sample demonstrates basic usage of the Google Pay API for Android.
 
